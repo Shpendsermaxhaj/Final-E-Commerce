@@ -1,0 +1,40 @@
+
+.container{
+    height:100%;
+
+ 
+}
+
+.footer-center { 
+    display: flex;  
+   align-content: center; 
+}
+
+.phoneIcon { 
+     resize: both 10px;
+    margin-right:10px; 
+}
+
+.mailIcon{ 
+margin-right:10px; 
+ 
+}
+
+.col1 { 
+    flex:start; 
+    justify-content: center; 
+    align-content: center; 
+}
+
+.socialIcon{ 
+    margin-left:10px; 
+    margin-bottom:10px;
+}
+
+
+.my-center { 
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ 

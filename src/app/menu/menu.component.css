@@ -1,0 +1,88 @@
+/* MenuComponent's private CSS styles */
+.container{
+    margin-left: -20px;
+  }
+  
+  .main-class{
+   flex-basis: 30%;
+  }
+  
+  .sidebar-one{
+  margin-right: 300px;
+  }
+  
+  
+  
+  
+  .selected {
+      background-color: #CFD8DC !important;
+      color: white;
+    }
+  
+  .h2c{
+    margin-top: 15px;
+    font-size: 32px;
+    color: #914c0b;
+    margin-left: 15px;
+  }
+  
+  .par{
+    margin-left: 15px;
+  }
+  
+  
+    .pizzas {
+      margin: 0 0 2em 0;
+      list-style-type: none;
+      padding: 0;
+      width: 15em;
+      
+      margin-left: 5px; 
+    }
+    .pizzas li {
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      background-color: #EEE;
+      margin: .5em;
+      padding: 5px;
+      height: 1.6em;
+      border-radius: 4px;
+    }
+    .pizzas li.selected:hover {
+      background-color: #BBD8DC !important;
+      color: white;
+    }
+    .pizzas li:hover {
+      color: #607D8B;
+      background-color: #DDD;
+      left: .1em;
+    }
+    .pizzas .text {
+      position: relative;
+      top: -3px;
+      
+    }
+    .pizzas .badge {
+      display: inline-block;
+      font-size: small;
+      color: white;
+      padding: 0.8em 0.7em 0 0.9em;
+      background-color: rgb(128, 57, 48);
+      line-height: 0em;
+      position: relative;
+      left: -1px;
+      top: -4px;
+      height: 1.8em;
+      margin-right: .8em;
+      border-radius: 4px 0 0 4px;
+    }
+  
+  
+    @media(min-width: 500px){
+      .container{
+              display: flex;
+    justify-content: space-between;
+  
+      }
+  }

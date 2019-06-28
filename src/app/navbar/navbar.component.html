@@ -1,0 +1,65 @@
+
+<nav> 
+    <div class="container"> 
+    <div class="row"> 
+    <div class="col-md-12 col-lg-12">
+    </div>
+    <div class="menu-mobile col-lg-12 col-md-12"> 
+    
+     <label for="toggle">&#9776;</label>
+     <input type="checkbox" id="toggle">
+  
+     
+     <div class="menu-pc">
+            <ul class="menu-main">
+                   <div class="logo"><Strong>ONLINE PIZZA ORDER SYSTEM</Strong></div>
+            <li (click)="onClick()" class="menu-main-li"> <a class="main-title">CATEGORIES</a>
+                    <div [class.menu-sub]="Visible" [class.menu-sub-2]="notVisible"> 
+  
+                      
+                    <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4"> 
+                                    <ul>   
+                                    <li class="titleCategory"> <a class="titleCategory" routerLink="about-us">PIZZAS</a></li>
+                                    <li ><a class="item" routerLink=""> Small Pizza</a></li>
+                                    <li><a class="item" routerLink="">Medium Pizza</a></li>
+                                    <li><a class="item" routerLink="">Large Pizza</a></li>
+                                    <li><a class="item" routerLink="">Extra Large Piza</a></li> 
+                                    </ul>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                            <ul>
+                                            <li class="titleCategory"> <a class="titleCategory" routerLink="laptops">MISSION</a></li>
+                                            <li><a class="item" routerLink="">Vision</a></li>
+                                            <li><a class="item" routerLink="">Purpose</a></li>
+                                            <li><a class="item" routerLink="">Marketing</a></li>
+                                            <li><a class="item" routerLink="">Strategic Plan</a></li>
+                                            </ul>
+                                    
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                    <ul>
+                                            <li class="titleCategory"> <a class="titleCategory" routerLink="">PLATFORMS</a></li>
+                                            <li><a class="item" routerLink="">WEB</a></li>
+                                            <li><a class="item" routerLink="/mobile">MOBILE </a></li>
+                                            <li><a class="item" routerLink="">DESKTOP </a></li>
+                                    </ul>
+                                    
+                            
+                            </div>
+                    </div>
+                    
+                    </div>
+                    </li>
+                    
+            <li (click)="onClick()" class="menu-main-li"> <a class="main-title" routerLink="/"> HOME </a></li> 
+            <li (click)="onClick()" class="menu-main-li"> <a class="main-title" routerLink="/about">ABOUT US </a></li>
+            <li (click)="onClick()" class="menu-main-li"> <a class="main-title" routerLink="/menu">MENU </a></li>
+            </ul>
+            </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    </nav>

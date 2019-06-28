@@ -1,0 +1,144 @@
+nav  { 
+  background:#e63422;
+  width: 100%;
+  border: solid 1px #f2f2f2;
+  /* box-shadow: 0px 5px 15px rgba(0,0,0,0.1);  */
+margin-top: -20px;
+}
+
+nav ul { 
+  margin:0px; 
+  padding:0px; 
+  list-style:none; 
+  position: relative; 
+}
+
+nav li { 
+  display: inline-block; 
+}
+
+nav .menu-main .main-title  { 
+color:#444; 
+text-decoration: none ; 
+display: block; 
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif , Courier, monospace;
+font-weight: bold;
+font-size: 15px;
+
+padding: .75em 1.75em; 
+cursor: pointer;
+
+}
+
+nav .menu-main-li:hover { 
+  background: #F58220;
+  background-color: #F58220;
+}
+
+nav a:hover { 
+  cursor: pointer;
+}
+
+.menu-sub {   
+  padding-top:20px;
+  margin-bottom: 20px;
+  position: absolute; 
+  background:white; 
+  width:100%;
+  display: none;  
+  z-index:1000;
+  height:200px;
+}
+
+nav li:hover .menu-sub { 
+  display: block; 
+}
+
+nav li:hover .menu-sub-2 { 
+  display: none; 
+}
+
+
+.menu-sub li { 
+  display: block; 
+}
+
+.menu-sub a { 
+  cursor: pointer;
+}
+
+
+
+.menu-sub ul .titleCategory {  
+  color:#F58220; 
+  text-decoration: none; 
+  padding-bottom: 10px;
+  padding-left:10px;
+}
+
+.menu-sub ul li .item { 
+  padding-left:20px;
+  color: black;  
+  text-decoration: none;  
+}
+
+.col-12 { 
+  padding-top:20px;
+}
+
+label { 
+  margin: 0 40px 0 0; 
+  font-size:26px; 
+  line-height:70px;   
+  display: none; 
+}
+
+#toggle {  
+  display: none;
+}
+
+@media only screen and (max-width:990px) { 
+  
+  label { 
+    display: block; 
+    cursor: pointer; 
+  }
+
+  nav li { 
+    display: block; 
+    border-bottom: 1px solid #EAEAEB; 
+  }
+
+
+   .menu-pc {  
+     text-align: center; 
+     width:100%; 
+     display:none ; 
+   } 
+
+  #toggle:checked + .menu-pc { 
+    display: block; 
+  }
+  
+  
+  
+  .menu-sub { 
+    padding-top:20px;
+    margin-bottom: 20px;
+    position: absolute; 
+    background:white; 
+    width:100%;
+    display: none;  
+    z-index:1000;
+    height:460px;
+  }
+}
+
+
+.logo{
+  color: white;
+  font-size: 15px;
+  align-content: left;
+  display:inline;
+}
