@@ -13,13 +13,11 @@ import { AboutComponent } from './about/about.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { TestComponent } from './test/test.component';
 import { PizzatestComponent } from './pizzatest/pizzatest.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { FooteroComponent } from './footero/footero.component';
 
-import {CarouselModule} from 'ngx-bootstrap/carousel';
-
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -34,25 +32,15 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
     AboutComponent,
     TestComponent,
     MenuDetailComponent,
-    FooteroComponent,
+    FooteroComponent
   ],
   imports: [
     BrowserModule,
     CarouselModule.forRoot(),
-    AppRoutingModule,
     FormsModule,
-
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent },
-      { path: 'menu', component: MenuComponent},
-      {path: 'about' , component: AboutComponent},
-      { path: 'mobile', component: MobileComponent},
-      {path: 'test', component: TestComponent},
-      {path: 'pizzatest', component: PizzatestComponent},
-      {path: 'cover', component: CoverComponent},
-    ]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
