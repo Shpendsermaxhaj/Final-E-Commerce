@@ -15,9 +15,6 @@
       "productCode": "GDN-0023",
       "releaseDate": "March 18, 2019",
       "description": "Ingredients for Chicago Pizza",
-      "price": 5.99,
-      "starRating": 4.2,
-      "imageUrl": "assets/images/Chic.png"
     },
     {
       "productId": 5,
