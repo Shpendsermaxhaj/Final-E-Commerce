@@ -18,6 +18,9 @@ import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 import { FooteroComponent } from './footero/footero.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ProductModule } from './shop/product/product.module';
+import { ShopModule } from './shop/shop.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -32,13 +35,18 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     AboutComponent,
     TestComponent,
     MenuDetailComponent,
-    FooteroComponent
+    FooteroComponent,
   ],
   imports: [
     BrowserModule,
     CarouselModule.forRoot(),
     FormsModule,
-    AppRoutingModule
+    ShopModule,
+    SharedModule,
+    ProductModule,
+    AppRoutingModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
