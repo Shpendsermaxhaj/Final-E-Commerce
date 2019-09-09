@@ -21,6 +21,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ProductModule } from './shop/product/product.module';
 import { ShopModule } from './shop/shop.module';
 import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     CarouselModule.forRoot(),
     FormsModule,
+    HttpClientModule,
     ShopModule,
     SharedModule,
     ProductModule,

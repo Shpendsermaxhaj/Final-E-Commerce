@@ -8,6 +8,8 @@ import { ProductService } from '../product.service';
   styleUrls: ['./productlist.component.css']
 })
 export class ProductlistComponent implements OnInit {
+errorMessage: string;
+
 
 // tslint:disable-next-line:variable-name
 private _productService;
@@ -39,14 +41,15 @@ performFilter(filterBy: string): IProduct[] {
 
 
 constructor(private productService: ProductService) {
-this.listFilter = '';
 }
 
 ngOnInit(): void {
-this.products = this.productService.getProducts();
-this.filteredProducts = this.products;
-
+  this.productService.getProducts().subscribe({
+    next: products => {
+      this.products = products;
+      this.filteredProducts = this.products;
+    },
+    error: err => this.errorMessage = err
+  });
 }
-
-
 }
