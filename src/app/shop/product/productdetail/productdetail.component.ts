@@ -10,31 +10,10 @@ import { ProductService } from '../product.service';
 })
 export class ProductdetailComponent implements OnInit {
 
-  pageTitle = 'Product Detail';
-  errorMessage = '';
-  product: IProduct | undefined;
 
-  constructor(private route: ActivatedRoute,
-              private router: Router,
-              private productService: ProductService) {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
-  ngOnInit() {
-    const param = this.route.snapshot.paramMap.get('id');
-    if (param) {
-      const id = +param;
-      this.getProduct(id);
-    }
-  }
 
-  getProduct(id: number) {
-    this.productService.getProduct(id).subscribe({
-      next: product => this.product = product,
-      error: err => this.errorMessage = err
-    });
-  }
-
-  onBack(): void {
-    this.router.navigate(['/products']);
-  }
 }
