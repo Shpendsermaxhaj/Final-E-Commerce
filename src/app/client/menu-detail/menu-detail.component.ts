@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Pizza } from '../menu/pizza';
-import { TestService } from '../test.service';
 
 @Component({
   selector: 'app-menu-detail',
@@ -15,9 +14,6 @@ export class MenuDetailComponent implements OnInit {
 
    ngOnInit() {
 }
-  //   this.testService.getEmployers().subscribe((data:any) => {
-  //     console.log('from menu', data)
-  // })
 
 }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Pizza} from '../menu/pizza';
-import {PIZZAS} from '../menu/mock-pizzas';
+import {Pizza} from './pizza';
+import {PIZZAS} from './mock-pizzas';
 
 
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IProduct } from '../product';
-import { ProductService } from '../product.service';
+import { IProduct } from './product.model';
+import { ProductService } from './product.service';
 
 @Component({
   selector: 'app-productlist',
@@ -20,9 +20,6 @@ private _productService;
     this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
   }
   pageTitle = 'Product List';
-  // // tslint:disable-next-line:variable-name
-  // tslint:disable-next-line:no-inferrable-types
-  // tslint:disable-next-line:variable-name
   private _listFilter = '';
 
 
