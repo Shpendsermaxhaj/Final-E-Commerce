@@ -6,6 +6,7 @@ import {AboutComponent} from './about/about.component';
 import {MobileComponent} from './mobile/mobile.component';
 import {CoverComponent} from './cover/cover.component';
 import {ClientComponent} from './client.component';
+import {ProductlistComponent} from './productlist/productlist.component';
 
 
 const appRoutes: Routes = [
@@ -17,12 +18,11 @@ const appRoutes: Routes = [
       {path: 'about', component: AboutComponent},
       {path: 'mobile', component: MobileComponent},
       {path: 'cover', component: CoverComponent},
+      {path: 'products', component: ProductlistComponent},
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: '**', redirectTo: 'home', pathMatch: 'full'}
     ]
   }
-
-
 
 
 ];
