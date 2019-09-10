@@ -33,23 +33,35 @@ private _productService;
 filteredProducts: IProduct[];
   products: IProduct[] = [];
 
-performFilter(filterBy: string): IProduct[] {
-  filterBy = filterBy.toLocaleLowerCase ();
-  return this.products.filter((product: IProduct) =>
+ performFilter(filterBy: string): IProduct[] {
+   filterBy = filterBy.toLocaleLowerCase ();
+   return this.products.filter((product: IProduct) =>
   product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
-}
+ }
 
 
 constructor(private productService: ProductService) {
+  this.filteredProducts = this.products;
+  
+  this._productService = productService;
 }
 
+
 ngOnInit(): void {
-  this.productService.getProducts().subscribe({
-    next: products => {
-      this.products = products;
-      this.filteredProducts = this.products;
-    },
-    error: err => this.errorMessage = err
-  });
+  this.products = this.productService.getProducts();
+  this.filteredProducts = this.products;
+
+
 }
+
+// ngOnInit(): void {
+//   this.productService.getProducts().subscribe({
+//     next: products => {
+//       this.products = products;
+//       this.filteredProducts = this.products;
+//     },
+//     error: err => this.errorMessage = err
+//   });
+// }
 }
+
